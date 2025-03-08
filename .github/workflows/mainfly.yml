@@ -8,14 +8,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+
       - name: Set up Fly.io CLI
         run: |
           curl -fsSL https://fly.io/install.sh | sh
           export PATH=$HOME/.fly/bin:$PATH
+          echo "Fly.io CLI installed"
 
       - name: Deploy to Fly.io
         run: fly deploy -a flowisexvmkeq
