@@ -6,8 +6,8 @@
       "use": "@vercel/node"
     }
   ],
-  "buildCommand": "pnpm install --no-frozen-lockfile && pnpm run build",
-  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "npm install --no-frozen-lockfile && npm run build",
+  "installCommand": "npm install --no-frozen-lockfile",
   "env": {
     "NODE_ENV": "production"
   }
