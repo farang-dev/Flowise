@@ -8,7 +8,6 @@
   ],
   "buildCommand": "pnpm install && pnpm run build",
   "installCommand": "pnpm install",
-  "startCommand": "pnpm start",
   "env": {
     "NODE_ENV": "production",
     "NODE_VERSION": "20"
