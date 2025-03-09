@@ -10,6 +10,7 @@
   "installCommand": "pnpm install",
   "startCommand": "pnpm start",
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "NODE_VERSION": "20"
   }
 }
