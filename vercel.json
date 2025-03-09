@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "packages/server/bin/*",
+      "use": "@vercel/node"
+    }
+  ],
+  "buildCommand": "pnpm install && pnpm run build",
+  "installCommand": "pnpm install",
+  "startCommand": "pnpm start",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
