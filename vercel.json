@@ -6,10 +6,9 @@
       "use": "@vercel/node"
     }
   ],
-  "buildCommand": "pnpm install && pnpm run build",
-  "installCommand": "pnpm install",
+  "buildCommand": "pnpm install --no-frozen-lockfile && pnpm run build",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "env": {
-    "NODE_ENV": "production",
-    "NODE_VERSION": "20"
+    "NODE_ENV": "production"
   }
 }
