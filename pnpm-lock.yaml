@@ -23250,7 +23250,7 @@ snapshots:
 
   '@types/node-fetch@2.6.12':
     dependencies:
-      '@types/node': 22.13.10
+      '@types/node': 18.19.80
       form-data: 4.0.2
 
   '@types/node-fetch@2.6.2':
