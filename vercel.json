@@ -6,9 +6,10 @@
       "use": "@vercel/node"
     }
   ],
-  "buildCommand": "pnpm install --frozen-lockfile && pnpm run build",
-  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "apt-get update && apt-get install -y build-essential && npm install --no-frozen-lockfile --build-from-source && npm run build",
+  "installCommand": "npm install --no-frozen-lockfile --build-from-source",
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "NODE_VERSION": "18.x"
   }
 }
